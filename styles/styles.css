@@ -14,8 +14,8 @@ header, .grid, footer {
     margin: 0 auto;
 }
 
-.grid main {
-    grid-column: 2 / 5;
+main {
+    grid-column: 2 / 4;
     margin: 1rem;
 }
 
@@ -56,20 +56,23 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
+    margin: 15px;
 }
 
 p {
-    padding: 0;
+    padding: 10px;
 }
 
 aside h2 {
     position: absolute;
     top: 47px;
-    left: 150px;
+    left: 120px;
+    color: white;
+    font-size: 30px;
 }
 
 aside img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
