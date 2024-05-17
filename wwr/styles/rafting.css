@@ -15,31 +15,42 @@
     --nav-hover-background-color: #1E96FC;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+* {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 960px;
+    box-sizing: border-box;
 }
 
-p {
-    padding: 25px;
+body {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+header img {
+    max-width: 150px;
 }
 
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-content: center;
     padding: 20px;
 }
 
 nav a {
-    display: block;
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
-}
-
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+    margin-right: 0 10px;
 }
 
 nav a:hover {
@@ -47,8 +58,12 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-.sociallinks img {
-    width: 30px;
+nav a:link, nav a:visited {
+    color: var(--nav-link-color);
+}
+
+main {
+    padding: 20px
 }
 
 .hero {
@@ -57,32 +72,59 @@ nav a:hover {
 }
 
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
+    /* position: absolute; */
 }
 
 .hero h1 {
     position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    text-align: center;
 }
 
-.hero article {
+article {
     position: absolute;
-    background-color: var(--accent1-color);
+    bottom: 30%;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
 }
 
 .hero article img {
-    position: absolute;
     float: right;
+    width: 160px;
+    margin-left: 20px;
 }
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
+section {
+    margin-top: 40px;
 }
 
-header {
-    padding: 20px;
+footer {
     background-color: var(--accent1-color);
+    padding: 20px;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    padding: 0px;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.sociallinks img {
+    width: 30px;
 }
