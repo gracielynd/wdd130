@@ -27,7 +27,7 @@ aside {
 }
 
 nav {
-    background-color: steelblue;
+    background-color: #2E5090;
     padding: 1rem;
     display: flex;
     justify-content: space-evenly;
@@ -44,15 +44,15 @@ nav a {
 }
 
 h1 {
-    color: steelblue;
+    color: #2E5090;
     padding: 1rem;
-    border-bottom: 1px solid steelblue;
+    border-bottom: 1px solid #2E5090;
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid #2E5090;
     padding: 2px;
     box-shadow: 0 0 30px gray;
     float: right;
