@@ -53,7 +53,7 @@ nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
-    margin-right: 0px 10px;
+    margin-right: 10px;
 }
 
 nav a:hover {
