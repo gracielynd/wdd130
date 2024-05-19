@@ -119,7 +119,7 @@ h2 {
 }
 
 .history {
-    margin-top: -60px;
+    margin-top: -80px;
     padding: 80px 15px 30px 15px;
     display: grid;
     background-color: var(--accent2-color);
