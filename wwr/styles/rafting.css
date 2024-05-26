@@ -181,3 +181,71 @@ h1, h2, h3, h4, h5, h6 {
 .white {
     color: var(--secondary-color);
 }
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h3, iframe {
+    margin: 0 auto;
+    padding: 2px;
+}
+
+form {
+    max-width: 600px;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: var(--paragraph-font);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    background-color: var(--nav-background-color);
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: var(--nav-hover-background-color);
+}
+
+.radio {
+    margin-right: 10px;
+}
+
+.employees {
+    margin-top: -50px;
+    padding: 80px 15px 30px 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.employees img {
+    max-width: 150px;
+    margin-top: 10px;
+}
