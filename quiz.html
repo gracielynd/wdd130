@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <title>Gracie Davis | HTML and CSS Quiz</title>
+            <meta name="description" content="Gracie Davis, WDD 130, HTML, CSS, Quiz, Project, BYU-I, Week 5">
+            <meta name="author" content="Gracie Davis">
+            <link rel="stylesheet" href="styles/quiz.css">
+    </head>
+    <body>
+        <h1>HTML and CSS Quiz</h1>
+        <form action="submit-quiz" method="post">
+            <div class="form-group">
+                <label for="q1">1. What does HTML stand for?</label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="q2">2. Explain the box model in CSS.</label>
+                <textarea id="q2" name="q2" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="q3">3. Which of the following is is a valid CSS comment?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One...</option>
+                    <option value="a"> // Comment </option>
+                    <option value="b"> /* Comment */ </option>
+                    <option value="c"> # Comment </option>
+                    <option value="d"> """ Comment """ </option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="q4">4. How many heading tags are there in HTML?</label>
+                <input type="number" id="q4" name="q4" required min="1" max="6">
+            </div> 
+            
+            <button type="submit" class="submit-button">Submit Quiz</button>
+        </form>
+    </body>
+</html>
