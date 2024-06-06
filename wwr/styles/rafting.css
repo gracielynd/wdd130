@@ -31,17 +31,17 @@ body {
 
 header {
     display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     padding: 10px;
     background-color: var(--accent1-color);
 }
 
 header img {
-    grid-column: 1/2;
     max-width: 150px;
 }
 
 nav {
-    grid-column: 2/3; 
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
@@ -69,6 +69,12 @@ main {
     padding: 20px
 }
 
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
 .hero {
     position: relative;
     overflow: hidden;
@@ -77,7 +83,6 @@ main {
 .hero img {
     width: 100%;
     height: auto;
-    /* position: absolute; */
 }
 
 .hero h1 {
@@ -86,7 +91,7 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-family: 'Freeman', sans-serif;
+    font-family: var(--heading-font);
     font-size: 2.5rem;
     text-align: center;
 }
@@ -98,7 +103,7 @@ article {
     right: 20px;
     background-color: rgba(255, 255, 255, 0.75);
     padding: 20px;
-    color: black;
+    color: var(--primary-color);
     font-weight: bold;
 }
 
@@ -126,12 +131,13 @@ h2 {
     padding: 80px 15px 30px 15px;
     display: grid;
     background-color: var(--accent1-color);
-    grid-template-columns: repeat(3, 33.33%);
+    grid-template-columns: repeat(3, 1fr);
     color: var(--primary-color);
 }
 
 .history img {
     max-width: 250px;
+    height: auto;
 }
 
 .adventure {
@@ -139,11 +145,13 @@ h2 {
     margin-top: 15px;
     padding: 80px 15px 30px 15px;
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
 }
 
 .adventure img {
     max-width: 150px;
+    height: auto;
 }
 
 figcaption {
@@ -153,14 +161,16 @@ figcaption {
     max-width: 150px;
     margin-top: -5px;
     text-align: center;
+    padding: 5px;
 }
 
 footer {
     background-color: var(--accent1-color);
     padding: 30px 20px 50px 20px;
-    color: black;
+    color: var(--primary-color);
     text-align: center;
 }
+
 a {
     color: black;
 }
@@ -199,13 +209,15 @@ h1, h2, h3, h4, h5, h6 {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .info p {
     font-family: var(--heading-font);
     padding: 0px;
     font-size: 1.3rem;
+    margin: 5px 0px;
 }
 
 .info p, iframe {
@@ -215,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
 
 form {
     max-width: 600px;
-    margin-top: 50px;
+    margin: 50px auto;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
@@ -248,13 +260,70 @@ form {
 }
 
 .employees {
-    margin-top: -50px;
-    padding: 80px 15px 30px 15px;
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    padding: 50px 15px;
 }
 
 .employees img {
     max-width: 150px;
     margin-top: 10px;
+    height: auto;
+}
+
+.cta {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.trip-descriptions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.trip {
+    width: 30%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.trip img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.trip h2 {
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.trip p {
+    color: var(--primary-color);
+}
+
+.trips-table {
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
 }
